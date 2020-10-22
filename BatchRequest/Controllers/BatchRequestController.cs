@@ -33,7 +33,6 @@ namespace BatchRequest.Controllers
 		[HttpPost]
 		[Consumes("application/json")]
 		[Produces("application/json")]
-		[AllowForBatchRequest]
 		public IActionResult BatchRequest(RequestInfo[] requestInfos)
 		{
 			if (!_batchRequestOptions.EnableEndpoint)

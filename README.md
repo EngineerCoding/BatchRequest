@@ -11,7 +11,7 @@ BatchRequest is NuGet package which opens up an endpoint within a Asp.Net Core a
 To add batch requests to your application, call the `IServiceCollection` extensions methond in `ConfigureServices(IServiceCollection services)`:
 
 ```
-public void ConfigureServices(IServicesCollection services) 
+public void ConfigureServices(IServicesCollection services)
 {
     // ..
     services.AddBatchRequest();
@@ -24,6 +24,8 @@ This method optionally takes an `Action<BatchRequestOptions>` parameter, to conf
 * EnableEndpoint: Whether to enable the /api/batch endpoint. Defaults to true. When set to false, one can still get the `IBatchRequestService` through dependency injection.
 * RequestHost: The request host which is set in `HttpContext.Request`, which could be used identify whether the current request is being executed in the context of a batch request. Defaults to `https://batchrequest`.
 * DefaultProtocol: The request protocol string which is set in `HttpContext.Request`. Defaults to `BatchRequest`.
+
+Some endpoints or controllers might not be suitable for batch requests as per your own requirements. This can be configured by using the `IgnoreForBatchRequestAttribute`, which will ignore either a complete controller or specific method in a controller. To still allow a controller method for use with batch requests when the controller is ignored completely, the `AllowForBatchRequestAttribute` can be used on a particular method. When both those attributes are applied on a single method, `AllowForBatchRequestAttribute` is used over `IgnorForBatchRequestAttribute`.
 
 ## Making a batch request
 
