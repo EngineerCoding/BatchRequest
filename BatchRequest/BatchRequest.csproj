@@ -11,6 +11,9 @@
     <RepositoryUrl>https://github.com/EngineerCoding/BatchRequest</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>BatchRequest is NuGet package which opens up an endpoint within a Asp.Net Core application to make batch requests: multiple requests embedded within a single HTTP request. While REST API's are quite strong, sometimes lots of values have to be retrieved before proper UI can be shown. Launching multiple requests is definitely an option, but when the amount increases it is a good idea to bundle your requests to both make your UI code simpler and save some load on your server.
+</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
