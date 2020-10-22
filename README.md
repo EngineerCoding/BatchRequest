@@ -1,3 +1,7 @@
+<a href="https://www.nuget.org/packages/Ameling.BatchRequest#">
+    <img src="https://img.shields.io/nuget/v/Ameling.BatchRequest?style=for-the-badge" alt="Get on NuGet!"/>
+</a>
+
 # BatchRequest
 
 BatchRequest is NuGet package which opens up an endpoint within a Asp.Net Core application to make batch requests: multiple requests embedded within a single HTTP request. While REST API's are quite strong, sometimes lots of values have to be retrieved before proper UI can be shown. Launching multiple requests is definitely an option, but when the amount increases it is a good idea to bundle your requests to both make your UI code simpler and save some load on your server.
