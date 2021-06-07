@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchRequest", "BatchRequest\BatchRequest.csproj", "{06165F24-46F6-49B3-97B3-C17381AAF8B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchRequest", "BatchRequest\BatchRequest.csproj", "{06165F24-46F6-49B3-97B3-C17381AAF8B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchRequestApi", "BatchRequest.Api\BatchRequestApi.csproj", "{0B9D73C3-C76F-400C-B345-ABFFA557C6EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{06165F24-46F6-49B3-97B3-C17381AAF8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06165F24-46F6-49B3-97B3-C17381AAF8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06165F24-46F6-49B3-97B3-C17381AAF8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9D73C3-C76F-400C-B345-ABFFA557C6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9D73C3-C76F-400C-B345-ABFFA557C6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9D73C3-C76F-400C-B345-ABFFA557C6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9D73C3-C76F-400C-B345-ABFFA557C6EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
