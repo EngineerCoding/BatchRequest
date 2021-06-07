@@ -231,6 +231,7 @@ namespace BatchRequest
 			DefaultHttpContext httpContext = new DefaultHttpContext();
 			httpContext.Features.Set<IEndpointFeature>(new HttpContextFeatures.EndpointFeature(routeEndpoint));
 			httpContext.Features.Set<IRoutingFeature>(new HttpContextFeatures.RoutingFeature(routeValues));
+			httpContext.Features.Set<IRouteValuesFeature>(new HttpContextFeatures.RouteValuesFeature(routeValues));
 			httpContext.RequestServices = _serviceProvider;
 
 			if (_httpContextAccessor.HttpContext != null)
